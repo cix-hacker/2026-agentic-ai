@@ -3,6 +3,7 @@
 本节介绍如何使用 CIX AI Model Hub 中的计算机视觉模型，在 CIX P1 平台上完成模型编译、NPU 推理、输入输出适配及应用集成。
 
 CIX AI Model Hub 中的完整视觉模型示例通常包括原始模型、量化配置、校准数据、测试数据、已编译的 .cix 模型，以及 ONNX 和 NPU 端到端推理脚本。对于首次验证，建议优先使用模型目录中已经提供的 .cix 文件和 inference_npu.py；仅在修改模型、量化参数、输入尺寸或编译配置时，才需要重新执行 cixbuild。
+需要注意的是，YOLO 系列模型已独立维护于 YOLO Series 模型仓库：https://www.modelscope.cn/models/cix/ai_model_hub_yolo_series/files。ai_model_hub_26_Q2 主仓库中的部分 YOLO 目录可能仅保留推理脚本和构建配置，不包含对应的 .cix 文件。使用此类模型时，应先从独立仓库获取对应的 .cix 文件，并确认文件完整、存放路径与推理脚本配置一致。
 
 ## 3.2.1 当前支持的视觉任务
 
